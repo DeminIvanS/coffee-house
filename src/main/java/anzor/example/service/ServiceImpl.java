@@ -1,6 +1,7 @@
 package anzor.example.service;
 
 import anzor.example.entity.Product;
+import anzor.example.exception.EntityNotFoundException;
 import anzor.example.repository.ProductRepository;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
@@ -25,15 +26,15 @@ public class ServiceImpl implements ProductService{
         return productRepository.save(product);
     }
 
-    @Override
-    public Product findByIdProduct(Long id) {
-        return productRepository.findById(id).orElse(null);
+
+    public Product findById(Long id) {
+        return productRepository.findById(id)
+                .orElseThrow(()-> new EntityNotFoundException(String.format("Product with id %s not found",
+                        id)));
     }
 
-    @Override
-    public void deleteByIdProduct(Long id) {
+    public void deleteById(Long id) {
 
-
-       productRepository.delete(findByIdProduct(id));
+       productRepository.deleteById(id);
     }
 }
