@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Product Form</title>
-</head>
-<body>
+<head th:replace="fragments/head "></head>
+<div class="card text-white bg-dark mb-3">
+    <body>
+    <div th:replace="fragments/nav :: nav "></div>
+
 <h1 th:text="(${product == null} ? 'New Product' : 'Edit Product')"></h1>
 
+
 <form th:action="@{/api/v1/product/save}" th:object="${product}" method="post">
+
+
     <input type="hidden" th:field="*{id}"/>
     <input type="text" placeholder="Name" th:field="*{name}"/>
     <input type="text" placeholder="Description" th:field="*{description}"/>
-    <button type="submit">Save</button>
+    <button type="submit"class="btn btn-dark">Save</button>
+
 </form>
+</div>
+<!-- Footer -->
+    <div th:replace="fragments/footer :: footer "></div>
+    <div th:replace="fragments/scripts"></div>
 </body>
 </html>
