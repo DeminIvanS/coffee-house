@@ -1,4 +1,4 @@
-package anzor.example.entity;
+package aiven_s.example.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

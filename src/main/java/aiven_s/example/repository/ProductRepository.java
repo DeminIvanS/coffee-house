@@ -1,6 +1,6 @@
-package anzor.example.repository;
+package aiven_s.example.repository;
 
-import anzor.example.entity.Product;
+import aiven_s.example.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {

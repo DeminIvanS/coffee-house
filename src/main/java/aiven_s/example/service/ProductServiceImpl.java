@@ -1,9 +1,8 @@
-package anzor.example.service;
+package aiven_s.example.service;
 
-import anzor.example.entity.Product;
-import anzor.example.exception.EntityNotFoundException;
-import anzor.example.repository.ProductRepository;
-import lombok.AllArgsConstructor;
+import aiven_s.example.entity.Product;
+import aiven_s.example.exception.EntityNotFoundException;
+import aiven_s.example.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +11,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 
-public class ServiceImpl implements ProductService{
+public class ProductServiceImpl implements ProductService{
 
     private final ProductRepository productRepository;
     @Override

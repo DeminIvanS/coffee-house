@@ -1,6 +1,6 @@
-package anzor.example.service;
+package aiven_s.example.service;
 
-import anzor.example.entity.Product;
+import aiven_s.example.entity.Product;
 
 import java.util.List;
 

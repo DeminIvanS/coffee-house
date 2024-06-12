@@ -1,11 +1,11 @@
-package anzor.example.controller;
+package aiven_s.example.controller;
 
 
-import anzor.example.dto.ProductDTO;
-import anzor.example.entity.Product;
+import aiven_s.example.dto.ProductDTO;
+import aiven_s.example.entity.Product;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import anzor.example.service.ProductService;
+import aiven_s.example.service.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

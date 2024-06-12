@@ -1,8 +1,6 @@
-package anzor.example.dto;
+package aiven_s.example.dto;
 
-import anzor.example.entity.Product;
-import lombok.Getter;
-import lombok.Setter;
+import aiven_s.example.entity.Product;
 
 
 public record ProductDTO(Long id, String name, String description) {

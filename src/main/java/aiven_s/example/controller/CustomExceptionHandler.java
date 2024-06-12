@@ -1,7 +1,7 @@
-package anzor.example.controller;
+package aiven_s.example.controller;
 
 
-import anzor.example.exception.EntityNotFoundException;
+import aiven_s.example.exception.EntityNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
