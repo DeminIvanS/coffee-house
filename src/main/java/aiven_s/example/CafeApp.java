@@ -1,4 +1,4 @@
-package anzor.example;
+package aiven_s.example;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.SpringApplication;
